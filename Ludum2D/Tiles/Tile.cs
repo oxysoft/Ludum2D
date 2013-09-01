@@ -17,6 +17,10 @@ namespace Ludum2D.Tiles {
 			get { return new Vector2(Width, Height); }
 		}
 
+		protected Tile(int x, int y) {
+			this.Location = new Vector2(x, y);
+		}
+
 		public Vector2 Location;
 		public abstract int Id { get; }
 
